@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    // my extensions, ofc :P
     "antfu.browse-lite",
     "antfu.iconify",
     "antfu.slidev",
@@ -10,23 +9,21 @@
     "antfu.open-in-github-button",
     "lokalise.i18n-ally",
 
-    // themes & icons
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
     "file-icons.file-icons",
     "sainnhe.gruvbox-material",
     "Catppuccin.catppuccin-vsc-icons",
 
-    // life savers!
     "dbaeumer.vscode-eslint",
     "Vue.volar",
     "GitHub.copilot",
     "usernamehw.errorlens",
     "streetsidesoftware.code-spell-checker",
 
-    // up to you
     "eamodio.gitlens",
     "EditorConfig.EditorConfig",
+    "deepscan.vscode-deepscan",
     "github.vscode-github-actions",
     "GitHub.vscode-pull-request-github",
     "johnsoncodehk.vscode-tsconfig-helper",
