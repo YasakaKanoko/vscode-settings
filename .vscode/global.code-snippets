@@ -1,93 +1,122 @@
 {
-  "import": {
-    "scope": "javascript,typescript",
-    "prefix": "im",
-    "body": [
-      "import { $1 } from '$2';"
-    ],
-    "description": "Import a module"
-  },
-  "export-all": {
-    "scope": "javascript,typescript",
-    "prefix": "ex",
-    "body": [
-      "export * from '$2';"
-    ],
-    "description": "Export a module"
-  },
-  "vue-script-setup": {
-    "scope": "vue",
-    "prefix": "<sc",
-    "body": [
-      "<script setup lang=\"ts\">",
-      "const props = defineProps<{",
-      "  modelValue?: boolean,",
-      "}>()",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "  <div>",
-      "    <slot/>",
-      "  </div>",
-      "</template>",
-    ]
-  },
-  "vue-template-ref": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "tref",
-    "body": [
-      "const ${1:el} = shallowRef<HTMLDivElement>()",
-    ]
-  },
-  "vue-computed": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "com",
-    "body": [
-      "computed(() => { $1 })"
-    ]
-  },
-  "vue-watch-effect": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "watchE",
-    "body": [
-      "watchEffect(() => {",
-      "  $1",
-      "})"
-    ]
-  },
-  "if-vitest": {
-    "scope": "javascript,typescript",
-    "prefix": "ifv",
-    "body": [
-      "if (import.meta.vitest) {",
-      "  const { describe, it, expect } = import.meta.vitest",
-      "  ${1}",
-      "}"
-    ]
-  },
-  "markdown-api-table": {
-    "scope": "markdown",
-    "prefix": "table",
-    "body": [
-      "<table>",
-      "<tr>",
-      "<td width=\"400px\" valign=\"top\">",
-      "",
-      "### API",
-      "",
-      "Description",
-      "",
-      "</td>",
-      "<td width=\"600px\"><br>",
-      "",
-      "```ts",
-      "// code block",
-      "```",
-      "",
-      "</td>",
-      "</tr>",
-      "</table>",
-    ],
-  }
+	"import": {
+		"scope": "javascript,typescript",
+		"prefix": "im",
+		"body": [
+			"import { $1 } from '$2';"
+		],
+		"description": "Import a module"
+	},
+	"export-all": {
+		"scope": "javascript,typescript",
+		"prefix": "ex",
+		"body": [
+			"export * from '$2';"
+		],
+		"description": "Export a module"
+	},
+	"vue-script-setup": {
+		"scope": "vue",
+		"prefix": "<sc",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"const props = defineProps<{",
+			"  modelValue?: boolean,",
+			"}>()",
+			"$1",
+			"</script>",
+			"",
+			"<template>",
+			"  <div>",
+			"    <slot/>",
+			"  </div>",
+			"</template>",
+		]
+	},
+	"vue-template-ref": {
+		"scope": "javascript,typescript,vue",
+		"prefix": "tref",
+		"body": [
+			"const ${1:el} = shallowRef<HTMLDivElement>()",
+		]
+	},
+	"vue-computed": {
+		"scope": "javascript,typescript,vue",
+		"prefix": "com",
+		"body": [
+			"computed(() => { $1 })"
+		]
+	},
+	"vue-watch-effect": {
+		"scope": "javascript,typescript,vue",
+		"prefix": "watchE",
+		"body": [
+			"watchEffect(() => {",
+			"  $1",
+			"})"
+		]
+	},
+	"if-vitest": {
+		"scope": "javascript,typescript",
+		"prefix": "ifv",
+		"body": [
+			"if (import.meta.vitest) {",
+			"  const { describe, it, expect } = import.meta.vitest",
+			"  ${1}",
+			"}"
+		]
+	},
+	"markdown-api-table": {
+		"scope": "markdown",
+		"prefix": "table",
+		"body": [
+			"<table>",
+			"<tr>",
+			"<td width=\"400px\" valign=\"top\">",
+			"",
+			"### API",
+			"",
+			"Description",
+			"",
+			"</td>",
+			"<td width=\"600px\"><br>",
+			"",
+			"```ts",
+			"// code block",
+			"```",
+			"",
+			"</td>",
+			"</tr>",
+			"</table>",
+		],
+	},
+	"markdown-img-center": {
+		"scope": "markdown",
+		"prefix": "imgc",
+		"body": [
+			"<div align=\"center\">",
+			"  <img src=\"$1\" alt=\"$2\" width=\"$3\" hight=\"$4\">",
+			"</div>"
+		]
+	},
+	"jsx-component": {
+		"scope": "javascript,typescript,jsx,tsx",
+		"prefix": "comp",
+		"body": [
+			"function $1() {\n",
+			"  return (",
+			"    <>\n",
+			"    </>",
+			"  );",
+			"}",
+			"export default $1;",
+		]
+	},
+	"jsx-hooks": {
+		"scope": "javascript,typescript,jsx,tsx",
+		"prefix":"imh",
+		"body": [
+			"import { useState, useEffect } from 'react';"
+		]
+	}
 }
