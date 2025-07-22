@@ -114,7 +114,7 @@
 	},
 	"jsx-hooks": {
 		"scope": "javascript,typescript,jsx,tsx",
-		"prefix":"imh",
+		"prefix": "imh",
 		"body": [
 			"import { useState, useEffect } from 'react';"
 		]
